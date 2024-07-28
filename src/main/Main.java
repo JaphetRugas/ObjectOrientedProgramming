@@ -29,13 +29,22 @@ public class Main {
 //		System.out.println(p2.sex);
 //		System.out.println(p2.age); 
 		
-		new Product("Jade", 12);
-		new Product("Jade", 12.0f);
 		
-		Person p1 = new Person("Jade", "Rugas", 'M', 12);
+//		OOP - Constructors
+//		new Product("Jade", 12);
+//		new Product("Jade", 12.0f);
+//		
+//		Person p1 = new Person("Jade", "Rugas", 'M', 12);
+//		
+//		System.out.println(p1.age);
 		
-		System.out.println(p1.age);
-
+//		OOP - Object Methods
+		Character ch = new Character("Zues", "I am a god", 10000, 10000, 999);
+		
+		ch.introduce();
+		ch.sayDialog();
+		ch.talkTo("Jade");
+		ch.talkCha(ch);
 	}
 
 }

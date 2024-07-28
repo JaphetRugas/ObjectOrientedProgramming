@@ -10,7 +10,7 @@ public class Calculator {
 		this.num2 = num2;
 	} 
 	
-	public void sum() {
+	void sum() {
 		System.out.println(num1 + num2);
 	}
 
