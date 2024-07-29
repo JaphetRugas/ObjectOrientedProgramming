@@ -1,8 +1,11 @@
 package main;
 
+import java.util.Scanner;
+
 public class Main {
 
 	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
 //		OOP First Part, showing Classes and Objects
 //		Person p = new Person();
 //		Person p2 = new Person(); 
@@ -39,12 +42,27 @@ public class Main {
 //		System.out.println(p1.age);
 		
 //		OOP - Object Methods
-		Character ch = new Character("Zues", "I am a god", 10000, 10000, 999);
+//		Character ch = new Character("Zues", "I am a god", 10000, 10000, 999);
+//		
+//		ch.introduce();
+//		ch.sayDialog();
+//		ch.talkTo("Jade");
+//		ch.talkCha(ch);
 		
-		ch.introduce();
-		ch.sayDialog();
-		ch.talkTo("Jade");
-		ch.talkCha(ch);
+//		OOP - Encapsulation
+		User user = new User(123);
+		
+		System.out.print("Enter Username: ");
+		user.setUserName(s.nextLine());
+		System.out.print("Enter First Name: ");
+		user.setfName(s.nextLine());
+		System.out.print("Enter Last Name: ");
+		user.setlName(s.nextLine());
+		
+		System.out.println("User ID: " + user.getUserID());
+		System.out.println("Username: " + user.getUserName());
+		System.out.println("First Name: " + user.getfName());
+		System.out.println("Last Name: " + user.getlName());
 	}
 
 }
